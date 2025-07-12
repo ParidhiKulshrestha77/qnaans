@@ -7,9 +7,9 @@
     'depends': ['base', 'web'],
     'data': [
         'security/ir.model.access.csv',
-        'views/question_views.xml',
-        'views/answer_views.xml',
-        'templates/forum_templates.xml'
+        'question_views.xml',
+        'answer_views.xml',
+        'forum_templates.xml'
     ],
     'installable': True,
     'application': True,
