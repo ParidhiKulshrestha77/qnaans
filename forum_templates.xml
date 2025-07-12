@@ -1,0 +1,29 @@
+<odoo>
+  <template id="forum_home" name="Forum Homepage">
+    <t t-call="website.layout">
+      <div class="container mt-4">
+        <h2>StackIt - Ask & Answer</h2>
+        <ul>
+          <t t-foreach="questions" t-as="q">
+            <li><a t-att-href="'/stackit/question/%s' % q.id"><t t-esc="q.title"/></a></li>
+          </t>
+        </ul>
+      </div>
+    </t>
+  </template>
+
+  <template id="question_page" name="Question Detail">
+    <t t-call="website.layout">
+      <div class="container mt-4">
+        <h3><t t-esc="question.title"/></h3>
+        <p><t t-esc="question.description"/></p>
+        <h5>Answers:</h5>
+        <ul>
+          <t t-foreach="question.answer_ids" t-as="ans">
+            <li><t t-esc="ans.content"/></li>
+          </t>
+        </ul>
+      </div>
+    </t>
+  </template>
+</odoo>

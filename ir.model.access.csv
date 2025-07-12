@@ -1,0 +1,3 @@
+"name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_question_user","model_stack_question","base.group_user",1,1,1,0
+"access_answer_user","model_stack_answer","base.group_user",1,1,1,0

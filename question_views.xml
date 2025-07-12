@@ -1,0 +1,17 @@
+<odoo>
+    <record id="view_form_question" model="ir.ui.view">
+        <field name="name">stack.question.form</field>
+        <field name="model">stack.question</field>
+        <field name="arch" type="xml">
+            <form string="Question">
+                <sheet>
+                    <group>
+                        <field name="title"/>
+                        <field name="description"/>
+                        <field name="tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
